@@ -1,0 +1,446 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #FEFBE6;
+    margin: 0px;
+}
+
+header {
+    background-color: #FEFBE6;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+nav {
+    background-color: #F6DE7D;
+    font-family: Georgia;
+    font-size: large;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: #F6BD28;
+    color: white;
+}
+
+footer {
+    background-color: #F6DE7D;
+    color: #666666;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    float: left;
+    width: 70%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.card {
+    background-image: url(image/card_img.jpg);
+    background-size: cover;
+    padding: 20px;
+    margin: 50px 0px;
+    border-radius: 15px;
+}
+
+
+.SCard {
+    padding: 20px;
+    margin: 50px 0px;
+}
+
+.homepage {
+    background-image: url(image/home.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    padding-top: 3px;
+}
+
+.quote {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 辰宇落雁體;
+    color: grey;
+    padding-left: 10px;
+    border-left: 10px solid #fff;
+}
+
+.AboutMePic {
+    float: left;
+}
+
+.AboutMetext {
+    font-family: 源石黑體;
+    float: left;
+    margin: auto;
+    padding: auto;
+    line-height: 1cm;
+}
+
+
+.AboutMe {
+    background-image: url(image/BGAboutMe.jpg);
+    background-size: cover;
+    padding: 20px;
+    margin: 50px 0px;
+    border-radius: 15px;
+}
+
+.Skills {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 微軟正黑體;
+}
+
+.SkillsUl {
+    width: 940px;
+    margin: auto;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.SkillsLi1,
+.SkillsLi2,
+.SkillsLi3,
+.SkillsLi4,
+.SkillsLi5,
+.SkillsLi6,
+.SkillsLi7,
+.SkillsLi8,
+.SkillsLi9 {
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    line-height: 160px;
+    margin: 0 50px -40px;
+    position: relative;
+    font-size: 30px;
+    list-style: none;
+}
+
+.SkillsLi1::before {
+    background: #fcb959;
+}
+
+.SkillsLi2::before {
+    background: #fca131;
+}
+
+.SkillsLi4::before {
+    background: #ea9247;
+}
+
+.SkillsLi7::before {
+    background: #ca510d;
+}
+
+.SkillsLi8::before {
+    background: #973204;
+}
+
+.SkillsLi3::before {
+    background: #fadc7a;
+}
+
+.SkillsLi5::before {
+    background: #f8d308;
+}
+
+.SkillsLi6::before {
+    background: #ffb602;
+}
+
+.SkillsLi9::before {
+    background: #fccc61;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+li:nth-child(n+4) {
+    left: 140px;
+}
+
+li:nth-child(n+7) {
+    left: 0;
+}
+
+li:hover {
+    color: #fff;
+}
+
+li:hover::before {
+    background-color: black;
+}
+
+.wrap {
+    width: 800px;
+    margin: auto;
+    font-family: 源石黑體;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h1~p {
+    line-height: 1.7;
+}
+
+.wrap:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0px;
+    clear: both;
+}
+
+.timeline {
+    padding: 100px 0 200px;
+}
+
+.timeline li {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    position: relative;
+}
+
+.timeline li:nth-child(odd) {
+    float: left;
+    padding-right: 100px;
+}
+
+.timeline li:nth-child(even) {
+    float: right;
+    padding-left: 100px;
+    transform: translateY(50%);
+}
+
+.timeline li:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 1px;
+    top: 0;
+    height: 100%;
+    background-color: #ccc;
+    right: 0;
+}
+
+.timeline li:last-child::after {
+    height: 50%;
+}
+
+.timeline li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #aaa;
+    z-index: 2;
+}
+
+.timeline li:nth-child(odd)::before {
+    right: -400px;
+}
+
+.timeline li:nth-child(even)::before {
+    left: -10px;
+}
+
+.timeline a {
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #888;
+}
+
+.timeline a:hover {
+    background-color: #fcbf49;
+}
+
+.timeline a:hover h2,
+.timeline a:hover p {
+    color: #fff;
+}
+
+.timeline h2 {
+    color: #333;
+    font-family: 源石黑體;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.timeline h3 {
+    color: #333;
+    font-family: 源石黑體;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.timeline p {
+    color: #666;
+    font-family: 源石黑體;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.timeline h2::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background-color: #aaa;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.timeline li:nth-child(odd) h2::after {
+    right: 0;
+}
+
+.timeline li:nth-child(even) h2::after {
+    left: 0;
+}
+
+
+.item {
+    width: 100%;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.item .txt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .5s;
+    font-family: 源石黑體;
+}
+
+.item:hover .txt {
+    opacity: 1;
+}
+
+.item h1 {
+    font-size: 36px;
+    color: #F6DE7D;
+    font-weight: 500;
+}
+
+.item h2 {
+    font-size: 28px;
+    color: #F6DE7D;
+    font-weight: 500;
+    line-height: 1.5cm;
+}
+
+.item h4 {
+    font-size: 28px;
+    color: #F6DE7D;
+    font-weight: 500;
+}
+
+.item h4:after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 10px 0;
+    background-color: #F6DE7D;
+    transition: width .5s .3s;
+}
+
+.item:hover h1:after,
+.item:hover h2:after,
+.item:hover h4:after {
+    width: 100%;
+}
+
+.item p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 100;
+    font-family: 源石黑體;
+    line-height: 1cm;
+}
+
+
+@media screen and (max-width:800px) {
+
+    article,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    .card {
+        padding: 15px;
+        margin: 15px 0px;
+    }
+
+    img {
+        max-width: 100%;
+        height: 90%;
+    }
+
+}
